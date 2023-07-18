@@ -9,6 +9,3 @@ form.addEventListener('submit', event => {
     event.preventDefault();
     controller.adiciona();
 });
-form.addEventListener('reset', event => {
-    controller.limpaForms();
-});

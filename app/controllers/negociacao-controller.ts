@@ -13,13 +13,16 @@ export class NegociacaoController{
 
     //Construindo a página
     constructor(){
+        console.log('adssadasdasd')
         this.inputData = document.querySelector('#data')
         this.inputQuantidade = document.querySelector('#quantidade')
         this.inputValor = document.querySelector('#valor')
         this.negociacoesView.update(this.negociacoes)
     }
 
-    adiciona(): void {
+    public adiciona(): void {
+        console.log('ssd')
+
         const exp = /-/g
         const date = new Date(this.inputData.value.replace(exp, ','))
         const quantidade = parseInt(this.inputQuantidade.value)

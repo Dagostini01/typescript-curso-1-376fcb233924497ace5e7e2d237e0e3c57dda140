@@ -13,6 +13,4 @@ form.addEventListener('submit', event => {
     controller.adiciona()
 })
 
-form.addEventListener('reset', event => {
-    controller.limpaForms()
-})
+
